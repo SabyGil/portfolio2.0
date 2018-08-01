@@ -1,1 +1,14 @@
-@import 'base';
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import 'base/mobile';
+
+@import "pages/about";
+@import 'pages/home';
+@import 'pages/work';
+@import 'pages/contact';
+
+@import 'components/menu';
+@import 'components/btn';
+@import 'components/footer';
