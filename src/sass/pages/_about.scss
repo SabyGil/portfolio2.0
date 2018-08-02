@@ -4,8 +4,9 @@
   grid-template-areas:
   'bioimage bio '
   'job1 job2';
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   padding: 0 1rem;
+  margin-bottom: 1rem;
   .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -26,10 +27,19 @@
 
   .job-1 {
     grid-area: job1;
+    display: grid;
+    justify-content: center;
   }
 
   .job-2 {
     grid-area: job2;
+    display: grid;
+    // grid-template-rows: min-content 1fr;
+    justify-content: center;
+    align-items: end;
+    .skills_list {
+      grid-row: 2 /3;
+    }
   }
 
   // .job-3 {
