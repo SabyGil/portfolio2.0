@@ -93,9 +93,21 @@ main {
       main .icons a i {
         margin: 0 .5rem; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home #menu-trigger {
+      border-radius: 2px;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, -50%);
+      font-size: 1rem;
+      color: white;
+      font-weight: 700; }
+      main#home #menu-trigger:hover {
+        color: black; }
 
 .projects {
   display: grid;
@@ -183,7 +195,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  cursor: pointer; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
     color: #000; }
