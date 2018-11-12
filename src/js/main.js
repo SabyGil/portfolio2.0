@@ -6,12 +6,16 @@ const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 const menuTrigger = document.querySelector('#menu-trigger');
 
+// const selectPortrait = document.querySelector('.portrait')
+
 //set initial state of menu
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 
-menuTrigger.addEventListener('click', toggleMenu);
+if(menuTrigger){
+	menuTrigger.addEventListener('click', toggleMenu);
+}
 
 function toggleMenu() {
 	if(!showMenu) {
@@ -31,3 +35,12 @@ function toggleMenu() {
 		showMenu = false;
 	}
 }
+
+// if(showMenu === false){
+// 	menuBranding.style.visibility = 'hidden';
+// 	menuNav.style.visibility = 'hidden'
+// }
+// if(showMenu === true) {
+// 	menuBranding.style.visibility = 'visible';
+// 	menuNav.style.visibility = 'visible'
+// }
