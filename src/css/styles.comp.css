@@ -84,14 +84,15 @@ header {
 main {
   min-height: calc(100vh - 60px); }
   main .icons {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     main .icons a {
-      padding: .4 rem; }
+      padding: 0.4 rem; }
       main .icons a:hover {
         color: #eece1a;
         transition: all .5s ease-out; }
       main .icons a i {
-        margin: 0 .5rem; }
+        margin: 0 0.5rem; }
   main#home {
     overflow: hidden;
     position: relative; }
@@ -101,8 +102,8 @@ main {
       border-radius: 2px;
       position: absolute;
       left: 50%;
-      top: 70%;
       transform: translate(-50%, -50%);
+      margin-top: 3rem;
       font-size: 1rem;
       color: white;
       font-weight: 700; }
@@ -111,12 +112,14 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem; }
+  grid-gap: 0.7rem;
+  padding: 1rem; }
   .projects .item {
     display: grid;
     grid-template-rows: 35vh min-content min-content; }
-    .projects .item .fas, .projects .item .fab {
-      margin-right: .4rem; }
+    .projects .item .fab,
+    .projects .item .fas {
+      margin-right: 0.4rem; }
     .projects .item img {
       width: 100%;
       height: 100%; }
@@ -125,7 +128,7 @@ main {
         border-color: #eece1a;
         transition: all .5s ease-out; }
     .projects .item.proj1 a:first-child {
-      background: url("../img/projects/project1.png") no-repeat center;
+      background: url("../img/projects/schooldb_img.png") no-repeat center;
       border: 3px solid #fff;
       background-size: cover; }
     .projects .item.proj2 a:first-child {
@@ -149,7 +152,6 @@ main {
       border: 3px solid #fff;
       background-size: cover; }
     .projects .item.proj7 a:first-child {
-      background: url("http://cucsa.org.uk/wp-content/uploads/2015/10/Work_In_Progress.png") no-repeat center;
       border: 3px solid #fff;
       background-size: cover; }
     .projects .item .overlay {
@@ -226,7 +228,7 @@ main {
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
     background: #fff;
     transition: all .5s ease-out; }
   .menu-btn.close {
@@ -295,6 +297,12 @@ main {
     transition: all .5s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
+
+.--show-menu {
+  visibility: visible; }
+
+.--hide-menu {
+  visibility: hidden; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
